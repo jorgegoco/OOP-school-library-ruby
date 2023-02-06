@@ -28,27 +28,20 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
+- Ruby
+
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
 </details>
 
 <details>
   <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
 </details>
 
 <details>
 <summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
@@ -68,34 +61,24 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Command line or terminal with Ruby installed.
+- IDE such as VsCode. 
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:jorgegoco/OOP-school-library-ruby.git
 ```
---->
 
 ### Install
 
