@@ -50,14 +50,11 @@
 - **Add new books**
 - **Save records of who borrowed a given book and when**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://github.com/jorgegoco/OOP-school-library-ruby)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -129,7 +126,7 @@ Example:
 ```
  -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+ <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -139,27 +136,13 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/JorgeGo78017548)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorgegoco/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- [ ] **To be added later**
+- [ ] **To be added later**
+- [ ] **To be added later**
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -167,19 +150,16 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/jorgegoco/OOP-school-library-ruby/issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project...give it a ⭐️!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank [@microverse](https://www.microverse.org/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
