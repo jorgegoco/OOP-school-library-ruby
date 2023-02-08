@@ -14,8 +14,8 @@ class Person < Nameable
     @rentals = []
   end
 
-  attr_accessor :name, :age
-  attr_reader :id, :rentals
+  attr_accessor :name, :age, :rentals
+  attr_reader :id
 
   def correct_name
     @name
@@ -27,7 +27,6 @@ class Person < Nameable
 
   def add_rental(date, book)
     rental = Rental.new(date, book, self)
-    @rentals.push(rental) unless @rentals.include?(rental)
   end
 
   private
