@@ -97,4 +97,16 @@ class App
       puts 'Rental created successfully'   
     end
   end
+
+  def show_rental_by_id
+    if @rentals.empty?
+      puts 'Empty list of rentals!'
+    else
+      print 'ID of person: '
+      id = gets.chomp.to_i
+      rentals = @rentals.select { |rental| rental.person.id == id }
+      puts 'Rentals: '
+      rentals.map { |rental| puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}." }
+    end
+  end
 end
