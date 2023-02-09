@@ -1,9 +1,11 @@
 require_relative './student'
 require_relative './teacher'
+require_relative './book'
 
 class App
   def initialize
     @people = []
+    @books = []
   end
 
   def list_all_people
@@ -44,10 +46,19 @@ class App
       age = gets.chomp.to_i
       puts 'Name:'
       name = gets.chomp.to_s
-     @people.push(Teacher.new(specialization, age, name))
+      @people.push(Teacher.new(specialization, age, name))
       puts 'Person created successfully'
     else
       puts 'Invalid Input'
     end
+  end
+
+  def create_book
+    puts 'Title:'
+    title = gets.chomp.to_s
+    puts 'Author:'
+    author = gets.chomp.to_s
+    @books.push(Book.new(title, author))
+    puts 'Book created successfully'
   end
 end
