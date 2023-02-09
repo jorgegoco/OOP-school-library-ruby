@@ -6,6 +6,16 @@ class App
     @people = []
   end
 
+  def list_all_people
+    if @people.empty?
+      puts 'Empty list!'
+    else
+      @people.map do |person|
+        puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      end
+    end
+  end
+
   def create_person
     print 'Do you want to create a student(1) or a teacher(2)? [Input the number]: '
     id = gets.chomp.to_i
