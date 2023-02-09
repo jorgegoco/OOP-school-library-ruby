@@ -8,6 +8,14 @@ class App
     @books = []
   end
 
+  def list_all_books
+    if @books.empty?
+      puts 'Empty list!'
+    else
+      @books.map { |book| puts "Title: \"#{book.title}\", Author: #{book.author}" }
+    end
+  end
+
   def list_all_people
     if @people.empty?
       puts 'Empty list!'
