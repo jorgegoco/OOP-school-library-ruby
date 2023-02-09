@@ -139,9 +139,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **To be added later**
-- [ ] **To be added later**
-- [ ] **To be added later**
+- [ ] **Refactor the code**
+- [ ] **Check edge cases**
 
 
 ## 🤝 Contributing <a name="contributing"></a>
