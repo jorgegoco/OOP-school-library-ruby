@@ -35,7 +35,7 @@ class Menu
       when 6
         @app.show_rental_by_id
       else
-        puts "Have a nice day!"
+        puts 'Have a nice day!'
       end
     end
   end
