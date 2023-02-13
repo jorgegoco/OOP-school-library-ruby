@@ -89,6 +89,7 @@ class App
   end
 
   private
+
   def create_student
     puts 'Age:'
     age = gets.chomp.to_i
@@ -116,8 +117,8 @@ class App
     specialization = gets.chomp.to_s
     @people.push(Teacher.new(specialization, age, name))
     puts 'Person created successfully'
-  end 
-  
+  end
+
   def index_out_of_bounds?(idx, array)
     idx >= array.length || idx.negative?
   end
