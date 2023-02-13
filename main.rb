@@ -41,7 +41,6 @@ class Menu
   end
 end
 
-
 def main
   puts 'Welcome to School library App!'
   menu = Menu.new
