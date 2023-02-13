@@ -136,10 +136,16 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/JorgeGo78017548)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jorgegoco/)
 
+👤 **Maaloum**
+
+- GitHub: [@githubhandle](https://github.com/maaloum)
+- Twitter: [@twitterhandle](https://twitter.com/maaloumely)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ely-cheikh-maaloum-075a79135/)
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Refactor the code**
+- [ ] **Preserve data**
 - [ ] **Check edge cases**
 
 
