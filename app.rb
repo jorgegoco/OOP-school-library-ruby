@@ -41,35 +41,6 @@ class App
     end
   end
 
-  def create_student
-    puts 'Age:'
-    age = gets.chomp.to_i
-    puts 'Name:'
-    name = gets.chomp.to_s
-    puts 'Has parent permission? [Y/N]:'
-    case gets.chomp.capitalize
-    when 'Y'
-      @people.push(Student.new(nil, age, name, parent_permission: true))
-      puts 'Person created successfully'
-    when 'N'
-      @people.push(Student.new(nil, age, name, parent_permission: false))
-      puts 'Person created successfully'
-    else
-      puts 'Invalid Input'
-    end
-  end
-
-  def create_teacher
-    puts 'Age:'
-    age = gets.chomp.to_i
-    puts 'Name:'
-    name = gets.chomp.to_s
-    puts 'Specialization:'
-    specialization = gets.chomp.to_s
-    @people.push(Teacher.new(specialization, age, name))
-    puts 'Person created successfully'
-  end
-
   def create_book
     puts 'Title:'
     title = gets.chomp.to_s
@@ -105,10 +76,6 @@ class App
     end
   end
 
-  def index_out_of_bounds?(idx, array)
-    idx >= array.length || idx.negative?
-  end
-
   def show_rental_by_id
     if @rentals.empty?
       puts 'Empty list of rentals!'
@@ -121,5 +88,37 @@ class App
     end
   end
 
-  private :create_student, :create_teacher, :index_out_of_bounds?
+  private
+  def create_student
+    puts 'Age:'
+    age = gets.chomp.to_i
+    puts 'Name:'
+    name = gets.chomp.to_s
+    puts 'Has parent permission? [Y/N]:'
+    case gets.chomp.capitalize
+    when 'Y'
+      @people.push(Student.new(nil, age, name, parent_permission: true))
+      puts 'Person created successfully'
+    when 'N'
+      @people.push(Student.new(nil, age, name, parent_permission: false))
+      puts 'Person created successfully'
+    else
+      puts 'Invalid Input'
+    end
+  end
+
+  def create_teacher
+    puts 'Age:'
+    age = gets.chomp.to_i
+    puts 'Name:'
+    name = gets.chomp.to_s
+    puts 'Specialization:'
+    specialization = gets.chomp.to_s
+    @people.push(Teacher.new(specialization, age, name))
+    puts 'Person created successfully'
+  end 
+  
+  def index_out_of_bounds?(idx, array)
+    idx >= array.length || idx.negative?
+  end
 end
