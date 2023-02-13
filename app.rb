@@ -2,11 +2,16 @@ require_relative './student'
 require_relative './teacher'
 require_relative './book'
 require_relative './rental'
+require_relative './preserve_books'
 
 class App
+  include PreserveBooks
+
+  attr_accessor :books
+
   def initialize
     @people = []
-    @books = []
+    @books = fetch_books
     @rentals = []
   end
 
