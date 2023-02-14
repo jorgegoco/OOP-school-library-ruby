@@ -3,7 +3,6 @@ require_relative './preserve_books'
 require_relative './preserve_people'
 # require_relative './preseve_rentals'
 
-
 class Menu
   include PreserveBooks
   include PreservePeople

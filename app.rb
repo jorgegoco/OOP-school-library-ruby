@@ -6,7 +6,6 @@ require_relative './preserve_books'
 require_relative './preserve_people'
 # require_relative './preseve_rentals'
 
-
 class App
   include PreserveBooks
   include PreservePeople
