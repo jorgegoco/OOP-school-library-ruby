@@ -22,7 +22,7 @@ module PreservePeople
   def store_people(people)
     people_array = []
     people.each do |person|
-      if person.class.instance_of?(Student)
+      if person.instance_of?(Student)
         people_array.push({ age: person.age, name: person.name, parent_permission: person.parent_permission })
       else
         people_array.push({ specialization: person.specialization, age: person.age, name: person.name })
