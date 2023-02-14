@@ -4,20 +4,20 @@ require_relative './book'
 require_relative './rental'
 require_relative './preserve_books'
 require_relative './preserve_people'
-require_relative './preseve_rentals.rb'
+# require_relative './preseve_rentals'
 
 
 class App
   include PreserveBooks
   include PreservePeople
-  include PreserveRentals
+  # include PreserveRentals
 
   attr_accessor :books, :people, :rentals
 
   def initialize
     @people = fetch_people
     @books = fetch_books
-    @rentals = fetch_rentals
+    @rentals = []
   end
 
   def list_all_books

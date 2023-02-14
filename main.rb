@@ -1,13 +1,13 @@
 require_relative './app'
 require_relative './preserve_books'
 require_relative './preserve_people'
-require_relative './preseve_rentals.rb'
+# require_relative './preseve_rentals'
 
 
 class Menu
   include PreserveBooks
   include PreservePeople
-  include PreserveRentals
+  # include PreserveRentals
 
   def initialize
     @app = App.new
@@ -53,7 +53,7 @@ class Menu
   def exit_app
     store_books(@app.books)
     store_people(@app.people)
-    store_rentals(@app.rentals)
+    # store_rentals(@app.rentals)
     exit
   end
 end
