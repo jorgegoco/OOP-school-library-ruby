@@ -5,7 +5,6 @@ module PreserveBooks
     books_array = []
     books_file = 'books.json'
     return books_array if !File.exist?(books_file) || File.read(books_file) == ''
-
     json_books = File.read('books.json')
     data_books = JSON.parse(json_books)
     class_books = data_books.map { |book| Book.new(book['title'], book['author']) }
