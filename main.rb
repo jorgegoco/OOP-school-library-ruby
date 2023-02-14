@@ -1,6 +1,13 @@
 require_relative './app'
+require_relative './preserve_books'
+require_relative './preserve_people'
+require_relative './preserve_rentals'
 
 class Menu
+  include PreserveBooks
+  include PreservePeople
+  include PreserveRentals
+
   def initialize
     @app = App.new
   end
@@ -35,9 +42,18 @@ class Menu
       when 6
         @app.show_rental_by_id
       else
-        exit
+        exit_app
       end
     end
+  end
+
+  private
+
+  def exit_app
+    store_books(@app.books)
+    store_people(@app.people)
+    store_rentals(@app.rentals)
+    exit
   end
 end
 
