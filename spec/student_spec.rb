@@ -1,4 +1,5 @@
 require_relative '../student'
+require_relative '../classroom'
 
 describe Student do
   before(:each) do
