@@ -1,12 +1,18 @@
-require_relative '../decorator.rb'
+require_relative '../decorator'
+require_relative '../nameable'
 
 
 describe Decorator do
   before(:each) do
-      @dec = Decorator.new("hello")
+      @nam = Nameable.new
+      @dec = Decorator.new(@nam)
   end
-  it 'tets decorator creation' do
-    expect(@dec.nameable).to eq("hello")
+  it 'tests decorator creation' do
+    expect(@dec).to be_an_instance_of(Decorator)
   end
+  it "tests decorator method" do
+    expect { @dec.correct_name }.to raise_error(NotImplementedError, "Nameable has not implemented method 'correct_name'")
+  end
+
 
 end
