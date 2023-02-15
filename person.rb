@@ -29,7 +29,7 @@ class Person < Nameable
     Rental.new(date, book, self)
   end
 
-  private
+  # private
 
   def of_age?
     @age >= 18

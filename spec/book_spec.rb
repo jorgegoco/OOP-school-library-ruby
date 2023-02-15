@@ -8,5 +8,5 @@ describe Book do
       expect(book.author).to eq 'test_author'
       expect(book.rentals).to eq []
     end
-  end 
+  end
 end
