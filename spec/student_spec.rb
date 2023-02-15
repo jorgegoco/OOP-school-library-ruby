@@ -7,7 +7,6 @@ describe Student do
   end
   context 'Unit testing in the Student class' do
     it 'test creating an instance' do
-      expect(@student.classroom).to be_nil
       expect(@student.age).to be < 18
       expect(@student.name).to eq 'test_name'
       expect(@student.parent_permission).to be false
@@ -16,6 +15,9 @@ describe Student do
 
     it 'test play_hooky method' do
       expect(@student.play_hooky).to eq '¯\(ツ)/¯'
+    end
+    it 'tets classroom method' do
+      expect(@student.classroom).to be_nil
     end
   end
 end
