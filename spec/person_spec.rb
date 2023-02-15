@@ -20,5 +20,15 @@ describe Person do
     it 'test of_age method' do
       expect(@person.of_age?).to be true
     end
+
+    it 'test add_rental method' do
+      @person.add_rental('test_date1', Book.new('test_title1', 'test_author1'))
+      @person.add_rental('test_date2', Book.new('test_title2', 'test_author2'))
+      expect(@person.rentals.length).to eql 2
+    end
+
+    it 'test correct_name method' do
+      expect(@person.correct_name).to eql(@person.name)
+    end
   end
 end
