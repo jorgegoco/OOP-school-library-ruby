@@ -1,4 +1,4 @@
-require_relative '../rental.rb'
+require_relative '../rental'
 
 describe Rental do
   before(:each) do
@@ -6,7 +6,7 @@ describe Rental do
     @book = Book.new('test_title', 'test_author')
     @rent = Rental.new('2/2/2022', @person, @book)
   end
-  it "tests the class Rental" do
+  it 'tests the class Rental' do
     expect(@rent.book).to eq(@book)
     expect(@rent.date).to eq('2/2/2022')
     expect(@rent.person).to eq(@person)
