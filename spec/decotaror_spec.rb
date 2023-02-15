@@ -1,7 +1,6 @@
 require_relative '../decorator'
 require_relative '../nameable'
 
-
 describe Decorator do
   before(:each) do
     @nam = Nameable.new
